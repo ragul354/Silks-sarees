@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Saree Skill and Re-Polish Center</title>
+  <meta name="description" content="Contact Saree Skill and Re-Polish Center by phone, WhatsApp or enquiry form, and find us on the map.">
+  <meta name="theme-color" content="#800020">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us | Saree Skill and Re-Polish Center">
+  <meta property="og:description" content="Contact Saree Skill and Re-Polish Center by phone, WhatsApp or enquiry form, and find us on the map.">
+  <meta property="og:image" content="images/banner/hero.svg">
+  <link rel="icon" type="image/svg+xml" href="images/logo/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Saree Skill and Re-Polish Center - Home">
+        <img src="images/logo/logo.svg" alt="" width="48" height="48">
+        <span class="brand-text">Saree Skill &amp; Re-Polish<small>Center</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero"><div class="container"><h1>Contact Us</h1><p>Tell us about your saree. We are happy to help.</p></div></section>
+
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="info-card reveal">
+          <h2 id="contact-title" style="font-size:1.6rem">Get in Touch</h2>
+          <ul class="info-list">
+            <li><strong>Phone</strong><a href="contact.html#enquiry" data-tel data-bind="phone"></a></li>
+            <li><strong>Address</strong><span data-bind="address"></span></li>
+            <li><strong>WhatsApp</strong>Send us a message with photos of your saree.</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--whatsapp" href="contact.html#enquiry" data-wa data-wa-message="Hello, I would like to enquire about your saree services.">Chat on WhatsApp</a>
+            <a class="btn btn--outline" href="contact.html#enquiry" data-tel>Call Us</a>
+          </div>
+        </div>
+
+        <div class="form-card reveal" id="enquiry">
+          <h2 style="font-size:1.6rem">Send an Enquiry</h2>
+          <form id="enquiry-form" name="enquiry" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="enquiry">
+            <p class="hp-field"><label>Do not fill this in: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div class="form-row">
+              <div class="field"><label for="f-name">Your name <span class="req">*</span></label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="field-error" aria-live="polite"></p></div>
+              <div class="field"><label for="f-phone">Phone number <span class="req">*</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><p class="field-error" aria-live="polite"></p></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="f-email">Email (optional)</label><input id="f-email" name="email" type="email" autocomplete="email"><p class="field-error" aria-live="polite"></p></div>
+              <div class="field"><label for="f-service">Service <span class="req">*</span></label><select id="f-service" name="service" required><option value="">Select a service</option><option value="Saree Re-Polishing" data-slug="re-polishing">Saree Re-Polishing</option><option value="Saree Dyeing" data-slug="dyeing">Saree Dyeing</option><option value="Saree Darning" data-slug="darning">Saree Darning</option><option value="Saree Fall and Pico" data-slug="fall-and-pico">Saree Fall and Pico</option><option value="Saree Embroidery" data-slug="embroidery">Saree Embroidery</option><option value="Saree Restoration" data-slug="restoration">Saree Restoration</option><option value="Saree Border Repair" data-slug="border-repair">Saree Border Repair</option><option value="Saree Zari Work Restoration" data-slug="zari-restoration">Saree Zari Work Restoration</option><option value="Saree Colour Restoration" data-slug="colour-restoration">Saree Colour Restoration</option><option value="Saree Cleaning and Maintenance" data-slug="cleaning">Saree Cleaning and Maintenance</option><option value="Other / Not sure">Other / Not sure</option></select><p class="field-error" aria-live="polite"></p></div>
+            </div>
+            <div class="field"><label for="f-message">About your saree <span class="req">*</span></label><textarea id="f-message" name="message" rows="5" placeholder="Fabric, what needs to be done, and any special occasion" required></textarea><p class="field-error" aria-live="polite"></p></div>
+            <div class="btn-row">
+              <button class="btn btn--maroon" type="submit">Send Enquiry</button>
+              <button class="btn btn--whatsapp" type="button" id="form-whatsapp">Send via WhatsApp</button>
+            </div>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container" id="map">
+        <div class="map-wrap" data-map><p class="callout" style="margin:0;border:0">Enable JavaScript to see the map, or search for our address on Google Maps.</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Saree Skill and Re-Polish Center</h3>
+        <p>Restore the Beauty. Preserve the Tradition.</p>
+        <p>Careful repair, restoration and maintenance for sarees of every kind.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul class="footer-list"><li><a href="services.html#re-polishing">Saree Re-Polishing</a></li><li><a href="services.html#dyeing">Saree Dyeing</a></li><li><a href="services.html#darning">Saree Darning</a></li><li><a href="services.html#fall-and-pico">Saree Fall and Pico</a></li><li><a href="services.html#embroidery">Saree Embroidery</a></li><li><a href="services.html#restoration">Saree Restoration</a></li><li><a href="services.html">View all services</a></li></ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li>Phone: <a href="contact.html#enquiry" data-tel data-bind="phone"></a></li>
+          <li>Address: <span data-bind="address"></span></li>
+          <li><a href="contact.html#enquiry" data-wa data-wa-message="Hello, I would like to enquire about your saree services.">Chat on WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">&copy; <span data-year>2026</span> Saree Skill and Re-Polish Center. All rights reserved.</div>
+  </footer>
+
+  <a class="wa-float" href="contact.html#enquiry" data-wa data-wa-message="Hello, I would like to enquire about your saree services." aria-label="Enquire on WhatsApp">WhatsApp Us</a>
+  <button class="back-to-top" type="button" aria-label="Back to top">&uarr;</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
